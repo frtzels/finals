@@ -1,0 +1,122 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <link rel="icon" href="https://scontent.fcgy2-1.fna.fbcdn.net/v/t39.30808-6/469541991_1272514350714943_671453650933796882_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=107&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeEBlNE-KCbevbv3qUzL5l66Usf_k1vDX1BSx_-TW8NfUB5JLlrFtfk5Br4J7rgKdq27gjDvA5ruslWM4r0CC7mg&_nc_ohc=XrMgwnTiaFkQ7kNvgHLo2dg&_nc_zt=23&_nc_ht=scontent.fcgy2-1.fna&_nc_gid=AlPmI9EU8zTia33XQ9W04Mq&oh=00_AYBMAOYPTxZEisaQ30e8HkX7z5SAMpKpgqiumVlHXHwROw&oe=675B617D" type="image/"/>
+    <title>Checkout - Coffee Haven</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .animate-fadeIn {
+            animation: fadeIn 2s ease-in-out;
+        }
+        .hover\:text-yellow-500 {
+            transition: color 0.3s ease;
+        }
+    </style>
+</head>
+<body class="font-roboto">
+    <header class="bg-gray-800 text-white p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-3xl font-bold"><a href="index.html">Coffee Haven</a></h1>
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a class="hover:text-yellow-500 transition-colors duration-300" href="index.html">Home</a></li>
+                    <li><a class="hover:text-yellow-500 transition-colors duration-300" href="menu.html">Menu</a></li>
+                    <li><a class="hover:text-yellow-500 transition-colors duration-300" href="about.html">About</a></li>
+                    <li><a class="hover:text-yellow-500 transition-colors duration-300" href="contact.html">Contact</a></li>
+                    <li><a class="hover:text-yellow-500 transition-colors duration-300" href="login.html">Login</a></li>
+                    <li><a class="hover:text-yellow-500 transition-colors duration-300" href="register.html">Register</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="container mx-auto py-12">
+        <h2 class="text-4xl font-bold text-center mb-8">Checkout</h2>
+        <form action="process_order.html" method="POST">
+            <div class="space-y-8">
+                <div class="checkout-item bg-white p-4 shadow-lg flex flex-col md:flex-row items-center md:items-start transform hover:scale-105 transition-transform duration-300">
+                    <img alt="Brewed Coffee" class="w-full md:w-1/3 h-48 object-cover mb-4 md:mb-0 md:mr-4" height="300" src="https://storage.googleapis.com/a1aa/image/8FOhmHeF58VuaCUZouN6Z6PRdbbDYVcgI7fnNFQztsJNrq4TA.jpg" width="400"/>
+                    <div>
+                        <h3 class="text-2xl font-bold mb-2">Brewed Coffee</h3>
+                        <p class="text-gray-700 mb-4">A classic cup of freshly brewed coffee made from the finest beans.</p>
+                        <label for="quantity-brewed-coffee" class="block mb-2">Quantity:</label>
+                        <input id="quantity-brewed-coffee" name="quantity-brewed-coffee" type="number" min="0" value="1" class="border rounded px-2 py-1 mb-4"/>
+                    </div>
+                </div>
+                <div class="checkout-item bg-white p-4 shadow-lg flex flex-col md:flex-row items-center md:items-start transform hover:scale-105 transition-transform duration-300">
+                    <img alt="Cappuccino" class="w-full md:w-1/3 h-48 object-cover mb-4 md:mb-0 md:mr-4" height="300" src="https://storage.googleapis.com/a1aa/image/xuN5epCHqy0zbKCCupu959N3A3LW02IIEGegNSIEx7NYrq4TA.jpg" width="400"/>
+                    <div>
+                        <h3 class="text-2xl font-bold mb-2">Cappuccino</h3>
+                        <p class="text-gray-700 mb-4">A rich and creamy cappuccino with a perfect balance of espresso and milk.</p>
+                        <label for="quantity-cappuccino" class="block mb-2">Quantity:</label>
+                        <input id="quantity-cappuccino" name="quantity-cappuccino" type="number" min="0" value="1" class="border rounded px-2 py-1 mb-4"/>
+                    </div>
+                </div>
+                <div class="checkout-item bg-white p-4 shadow-lg flex flex-col md:flex-row items-center md:items-start transform hover:scale-105 transition-transform duration-300">
+                    <img alt="Iced Coffee" class="w-full md:w-1/3 h-48 object-cover mb-4 md:mb-0 md:mr-4" height="300" src="https://storage.googleapis.com/a1aa/image/dl4llTxqMz7nNtV6R3e8Ai12gEgg4FErvNUVUQcU1xfRrq4TA.jpg" width="400"/>
+                    <div>
+                        <h3 class="text-2xl font-bold mb-2">Iced Coffee</h3>
+                        <p class="text-gray-700 mb-4">A refreshing iced coffee, perfect for a hot day.</p>
+                        <label for="quantity-iced-coffee" class="block mb-2">Quantity:</label>
+                        <input id="quantity-iced-coffee" name="quantity-iced-coffee" type="number" min="0" value="1" class="border rounded px-2 py-1 mb-4"/>
+                    </div>
+                </div>
+                <div class="checkout-item bg-white p-4 shadow-lg flex flex-col md:flex-row items-center md:items-start transform hover:scale-105 transition-transform duration-300">
+                    <img alt="Espresso" class="w-full md:w-1/3 h-48 object-cover mb-4 md:mb-0 md:mr-4" height="300" src="https://storage.googleapis.com/a1aa/image/1MCAzxwTNRYNCZ4B2i5Qsl1f7VxRmfUV39Fp1Mbj7HkWrq4TA.jpg" width="400"/>
+                    <div>
+                        <h3 class="text-2xl font-bold mb-2">Espresso</h3>
+                        <p class="text-gray-700 mb-4">A strong and bold espresso shot to kickstart your day.</p>
+                        <label for="quantity-espresso" class="block mb-2">Quantity:</label>
+                        <input id="quantity-espresso" name="quantity-espresso" type="number" min="0" value="1" class="border rounded px-2 py-1 mb-4"/>
+                    </div>
+                </div>
+                <div class="checkout-item bg-white p-4 shadow-lg flex flex-col md:flex-row items-center md:items-start transform hover:scale-105 transition-transform duration-300">
+                    <img alt="Latte" class="w-full md:w-1/3 h-48 object-cover mb-4 md:mb-0 md:mr-4" height="300" src="https://storage.googleapis.com/a1aa/image/SsDphfDclxWRfEferBBWaNNjPMjiYKTa3fTBgoeILiFx0qKeJA.jpg" width="400"/>
+                    <div>
+                        <h3 class="text-2xl font-bold mb-2">Latte</h3>
+                        <p class="text-gray-700 mb-4">A smooth and creamy latte with a touch of sweetness.</p>
+                        <label for="quantity-latte" class="block mb-2">Quantity:</label>
+                        <input id="quantity-latte" name="quantity-latte" type="number" min="0" value="1" class="border rounded px-2 py-1 mb-4"/>
+                    </div>
+                </div>
+                <div class="checkout-item bg-white p-4 shadow-lg flex flex-col md:flex-row items-center md:items-start transform hover:scale-105 transition-transform duration-300">
+                    <img alt="Mocha" class="w-full md:w-1/3 h-48 object-cover mb-4 md:mb-0 md:mr-4" height="300" src="https://storage.googleapis.com/a1aa/image/NMHiRkV5l3KzKVcuk41AcLc8fptspn5v1LTEHf5IPEUUrq4TA.jpg" width="400"/>
+                    <div>
+                        <h3 class="text-2xl font-bold mb-2">Mocha</h3>
+                        <p class="text-gray-700 mb-4">A delicious mocha with a perfect blend of coffee and chocolate.</p>
+                        <label for="quantity-mocha" class="block mb-2">Quantity:</label>
+                        <input id="quantity-mocha" name="quantity-mocha" type="number" min="0" value="1" class="border rounded px-2 py-1 mb-4"/>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-8">
+                <button type="submit" class="bg-yellow-500 text-white px-6 py-3 rounded-full text-lg font-bold hover:bg-yellow-600 transition-colors duration-300">Proceed to Payment</button>
+            </div>
+        </form>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-800 text-white p-4">
+        <div class="container mx-auto text-center">
+            <p>© 2024 Coffee Haven. All rights reserved.</p>
+            <div class="flex justify-center space-x-4 mt-4">
+                <a href="https://facebook.com" target="_blank" class="text-white hover:text-yellow-500">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="mailto:info@coffeehaven.com" class="text-white hover:text-yellow-500">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <a href="tel:+1234567890" class="text-white hover:text-yellow-500">
+                    <i class="fas fa-phone"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
