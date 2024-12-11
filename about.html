@@ -1,0 +1,88 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <link rel="icon" href="https://scontent.fcgy2-1.fna.fbcdn.net/v/t39.30808-6/469541991_1272514350714943_671453650933796882_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=107&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeEBlNE-KCbevbv3qUzL5l66Usf_k1vDX1BSx_-TW8NfUB5JLlrFtfk5Br4J7rgKdq27gjDvA5ruslWM4r0CC7mg&_nc_ohc=XrMgwnTiaFkQ7kNvgHLo2dg&_nc_zt=23&_nc_ht=scontent.fcgy2-1.fna&_nc_gid=AlPmI9EU8zTia33XQ9W04Mq&oh=00_AYBMAOYPTxZEisaQ30e8HkX7z5SAMpKpgqiumVlHXHwROw&oe=675B617D" type="image/"/>
+    <title>Coffee Haven</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .animate-fadeIn {
+            animation: fadeIn 2s ease-in-out;
+        }
+        .hover\:text-yellow-500 {
+            transition: color 0.3s ease;
+        }
+    </style>
+</head>
+<body class="font-roboto">
+    <header class="bg-gray-800 text-white p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-3xl font-bold"><a href="#home">Coffee Haven</a></h1>
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a class="hover:text-yellow-500 transition-colors duration-300" href="index.html">Home</a></li>
+                    <li><a class="hover:text-yellow-500 transition-colors duration-300" href="menu.html">Menu</a></li>
+                    <li><a class="hover:text-yellow-500 transition-colors duration-300" href="#about">About</a></li>
+                    <li><a class="hover:text-yellow-500 transition-colors duration-300" href="contact.html">Contact</a></li>
+                    <li><a class="hover:text-yellow-500 transition-colors duration-300" href="login.html">Login</a></li>
+                    <li><a class="hover:text-yellow-500 transition-colors duration-300" href="register.html">Register</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="hero bg-cover bg-center h-96 relative">
+            <img alt="Main Background" class="absolute inset-0 w-full h-full object-cover" height="1080" src="https://storage.googleapis.com/a1aa/image/kT6c1zkdamJDAN8ojsWnMTLm30UctOUjaJfB1gltbFvnVV8JA.jpg" width="1920"/>
+            <div class="container mx-auto h-full flex items-center justify-center relative z-10 animate-fadeIn">
+                <h2 class="text-5xl text-white font-bold">Welcome to Coffee Haven</h2>
+            </div>
+            <div class="absolute inset-0 bg-black opacity-50"></div>
+        </section>
+        <!-- About Us Section -->
+        <section id="about" class="container mx-auto py-12">
+            <h2 class="text-4xl font-bold text-center mb-8">About Us</h2>
+            <p class="text-lg text-gray-700 text-center">
+               <b>Welcome to Coffee Haven</b><br> Your Sanctuary for Exceptional Coffee
+At Coffee Haven, we believe that a perfect cup of coffee is not just a drink – it’s an experience, a moment of connection, and a celebration of craftsmanship. We’ve created a space where coffee enthusiasts can indulge in the finest, ethically sourced beans, brewed to perfection. Whether you're seeking a quiet place to work, meet friends, or simply enjoy a pause in your busy day, Coffee Haven is designed to be your retreat.<br>
+<br>
+
+<b>Our Mission:</b>
+<br>
+At Coffee Haven, our mission is simple: to provide exceptional coffee experiences that nourish both the body and the soul. We’re committed to offering high-quality, ethically sourced coffee while fostering a sense of community and sustainability. From the first sip to the last drop, we aim to deliver a taste of excellence that transports you to the heart of coffee culture.<br>
+<br>
+<b>Our Vision:</b>
+<br>
+Our vision is to be the go-to destination for coffee lovers, setting the standard for quality, sustainability, and innovation in the coffee industry. We aspire to create a space where everyone feels welcome to explore the rich world of coffee, learn about its origins, and celebrate its diverse flavors. By supporting ethical coffee farming practices and cultivating a vibrant, inclusive community, we envision Coffee Haven as a place that elevates the everyday coffee-drinking experience into something extraordinary.<br>
+
+<br>
+<b>Join Us at Coffee Haven:</b>
+<br>
+We invite you to be part of the Coffee Haven family. Come for the coffee, stay for the experience. Whether you're here for your daily fix or to explore something new, we promise to make every moment memorable.
+            </p>
+        </section>
+         <!-- Footer Section -->
+    <footer class="bg-gray-800 text-white p-4">
+        <div class="container mx-auto text-center">
+            <p>© 2024 Coffee Haven. All rights reserved.</p>
+            <div class="flex justify-center space-x-4 mt-4">
+                <a href="https://facebook.com" target="_blank" class="text-white hover:text-yellow-500">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="mailto:info@coffeehaven.com" class="text-white hover:text-yellow-500">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <a href="tel:+1234567890" class="text-white hover:text-yellow-500">
+                    <i class="fas fa-phone"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
